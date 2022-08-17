@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuhu Mandy_Blog</title>
+    <link rel="stylesheet" href="./Stylesheets/Blog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <nav>
+        <div class="navcont">
+            <div class="nuhu"><p style="font-size: 30px;">Nuhu Mandy</p></div>
+            <div class="bars">
+                <ul class="em">
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Aboutme.html">About me</a></li>
+                    <li><a href="#">What I do</a></li>
+                    <li><a class="active" href="Blog.html">Blog</a></li>
+                    <li><a href="#intro">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+    </nav>
+        <div class="content">
+          <div class="blog">
+                <img style="height: 60px; width: 60px;" src="./Stylesheets/images/wink.png">
+                <h2>working on something!</h2>
+                <h2>blog coming soon, please stay put...</h2>
+          </div>
+        </div>
+        <div class="contcont">
+            <div class="intro" id="intro"><h1 style="color: rgb(193, 169, 33);">contacts:</h1></div>
+            <div class="reachme">
+            <div class="left">
+                
+                <div class="email">
+                         <!-- <img src="mail.png" width="30px" height="30px"> -->
+                         <h3 style="color: rgb(193, 169, 33);">email:</h3>
+                         <ul style="color: silver;">
+                         <li><a href="mailto:caljr@gmail.com">caljr9301@gmail.com</a></li>
+                         </ul>
+                </div>
+                <div class="mobile">
+                          <!-- <img src="phone.png" width="30px" height="30px"> -->
+                          <h3 style="color: rgb(193, 169, 33);">mobile:</h3>
+                          <ul style="color: silver;">
+                          <li>+255 759 027 617</li>
+                          <li>+255 767 003 361</li>
+                          </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="location">
+                          <h3 style="color: rgb(193, 169, 33);">location:</h3>
+                          <ul style="color: silver; line-height: 30px;">
+                          <li><a href="https://goo.gl/maps/kAcYBKsYUoGNHTwT7" style="color: silver;">CoICT, Dar es Salaam Tanzania</a></li>
+                          </ul>
+                </div>
+            </div>
+            </div>
+            <div class="networks">
+                    <br><br><br><br>
+                    <a href="https://www.linkedin.com/in/nuhu-mandy-2b9843247"><img src="./Stylesheets/images/Li-In.png" width="50px" height="50px"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/NucciNello"><img src="./Stylesheets/images/github.png" width="50px" height="50px"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/MandyNuhu"><img src="./Stylesheets/images/twitter.png" width="50px" height="50px"></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/iam_nuhu_mandy"><img src="./Stylesheets/images/instagram.png" width="50px" height="50px"></a>
+            </div>
+        </div>
+    </div>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const em = document.querySelector(".em");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    em.classList.toggle("active");
+}
+</script>
+</body>
+</html>
+    
+</body>
+</html>
