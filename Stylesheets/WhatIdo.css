@@ -1,0 +1,509 @@
+/*Codes for the Body, Main Div and The Top-Bar useful in every page*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+  body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    /* font-family: Lucida "Courier New", Courier, monospace; */
+    font-family: 'Poppins', sans-serif;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .navcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 210px;
+    padding: 0 1rem;
+    background-color: rgb(53, 51, 51);
+  }
+  .nuhu {
+    width: 30%;
+    background-color: rgb(53, 51, 51);
+  }
+  .nuhu > p {
+    font-size: 250%;
+    color: rgb(193, 169, 33);
+  }
+  .bars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: inherit;
+  }
+  .bars > div > button {
+    background-color: rgb(193, 169, 33);
+    width: 120px;
+    height: 40px;
+  }.bars > div > button:hover{
+      background-color: silver;
+  }
+  
+  .bars ul{
+    float: right;
+    margin-right: 10px;
+  
+  }.bars ul li{
+     display: inline-block;
+     /* line-height: 50px; */
+     margin: 0 5px;
+  
+  }.bars ul li a{
+    color: rgb(193, 169, 33);
+    font-size: 19px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+  }a.active, a:hover{
+    background: rgb(192, 192, 192, 0.35);
+    transition: .5s;
+    border-radius: 3px;
+  
+  }
+  @media (min-width: 505px){
+  /* Hamburger Menu */
+  .hamburger{
+    display: none;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Codes for contents of Homepage Particularly*/
+  .content{
+      display: flex;
+      height: 230rem;
+      flex-direction: column;
+      
+
+  }
+  .developer{
+    height: 135rem;
+    width: 80%;
+    background-color: rgb(53, 51, 51);
+    margin: 60px auto 60px auto ;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  .hi-slide{
+    background-color: inherit;
+    height: 58.5rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+
+
+
+
+  .hi-slide .hi-prev,
+  .hi-slide .hi-next{
+    position: absolute;
+    top: 82.5%;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(193, 169, 33);
+    color: rgb(53, 51, 51);
+    transition: all 0.7s;
+    font-size: 45px;
+    /* font-weight: bold; */
+ 
+  }
+  .hi-slide .hi-prev{
+    left: 265px;
+
+  }
+  .hi-slide .hi-next{
+    left: 1588.5px;
+  }
+  .hi-slide .hi-next:hover,
+  .hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: rgb(192, 192, 192, 0.35);
+  }
+  .hi-slide .hi-prev::before {
+    content: "<";
+  }.hi-slide .hi-next::after {
+    content: ">";
+  }
+  .hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 85%;
+    height: 100%;
+    padding: 0;
+    background-color: inherit;
+    /* opacity: 0.1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hi-slide > ul >li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    /* left: ;
+    top: ; */
+    width: 70%;
+    height: 90%;
+    padding: 0;
+    border: 3px solid silver;
+    cursor: pointer;
+  }.hi-slide > ul > li > div{
+    width: 100%;
+    height: 100%;
+  }
+  .hi-slide > ul > li > div > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .developer hr{
+    border: 0.5px solid;
+    width: 90%;
+    margin: auto;
+    
+
+  }
+  .lower{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    margin-top: 70px;
+    color: silver;
+  }.imga{
+    display: flex;
+    justify-content: space-around;
+  }
+  .the{
+    display: inline-block;
+    text-align: center;
+    margin: 30px auto 30px auto;
+  }
+  .imgb{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .imgc{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .blogger{
+    height: 300px;
+    width: 95%;
+    background-color: greenyellow;
+    margin: 70px auto 0 auto;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Contacts CSS useful in every page*/
+  .contcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(53, 51, 51);
+    height: auto;
+  }
+  .reachme{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    background-color: inherit;
+    height: 200px;
+  }
+  .left{
+    background-color: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  
+  }.email{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-shrink: 2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .location{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .right{
+    background-color: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+  
+  }
+  .intro{
+    background-color: inherit;
+    font-size: larger;
+    background: inherit;
+    line-height: 100px;
+  
+  }
+  a:link{
+    color: silver;
+  }.networks{
+    display: flex;
+    height: 80px;
+    background-color: inherit;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  
+  
+  @media(max-width: 500px){
+    .nuhu {
+      width: 70%;
+      background-color: rgb(53, 51, 51);
+    }
+    .logo{
+      columns: pink;
+    }
+    .bars {
+      width: 0%;
+      /* display: none; */
+      /* background-color: pink; */
+      /* margin-top: 40px; */
+    }
+    .hamburger{
+      width: 30%;
+      background-color: inherit;
+      /* height: 40%; */
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .line {
+      /* margin: auto; */
+      display: block;
+      float: left;
+      height: 3px;
+      width: 45px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: silver;
+    }
+  
+  
+    .content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }.image{
+      width: 100%;
+      height: auto;
+      float: none;
+    }
+    .image >img{
+      height: 100%;
+    }.welcome{
+      width: 100%;
+      height: auto;
+      /* z-index: 1; */
+    }
+    .anime{
+      margin: 30px;
+    }
+  .anime > span{
+    display: none;
+  }
+    .reveal1{
+      height: auto;
+      text-align: center;
+      background-color: inherit;
+      line-height: 40px;
+  } 
+  
+  .reveal1 > h1{
+      position: inherit;
+      top: 0;
+      left: 0;
+      font-size: 25px;
+    }
+    .networks{
+      margin-top: 40px;
+    }
+    
+    .em.active{
+      margin: 0;
+      width: 100%;
+      font-size: 5px;
+      position: absolute;
+      height: cover;
+      top: 13.2rem;
+      right: 0%;
+      display: flex;
+      flex-direction: column;
+      background-color: silver;
+      line-height: 70px;
+      text-align: center;
+      transition: 0.3s;
+      /* box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05); */
+    }
+    
+    
+    .bars ul{
+      display: none;
+      top: 40px;
+    
+    }.bars ul li{
+       display: inline-block;
+       margin: 0;
+       border: 0;
+       /* border-bottom: 2px solid black; */
+       width: 100%;
+    
+    }.bars ul li a{
+      color: black;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+      text-transform: none;
+      top: 40px;
+    }a.active, a:hover{
+      background: rgb(53, 51, 51);
+      transition: .5s;
+      width: 100%;
+    }
+    .menu{
+      display: block;
+    }
+    
+  
+    .hamburger.active .line:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active .line:nth-child(1) {
+      transform: translateY(17.5px) rotate(45deg);
+  }
+  
+  .hamburger.active .line:nth-child(3) {
+      transform: translateY(-8.5px) rotate(-45deg);
+  }
+  .reachme{
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  
