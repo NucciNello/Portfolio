@@ -96,7 +96,7 @@
 
   }
   .developer{
-    height: 135rem;
+    height: 140rem;
     width: 80%;
     background-color: rgb(53, 51, 51);
     margin: 60px auto 60px auto ;
@@ -177,7 +177,7 @@
     width: 70%;
     height: 90%;
     padding: 0;
-    border: 3px solid silver;
+    border: 3px solid rgb(193, 169, 33);
     cursor: pointer;
   }.hi-slide > ul > li > div{
     width: 100%;
@@ -186,44 +186,86 @@
   .hi-slide > ul > li > div > img{
     width: 100%;
     height: 100%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }  
   .developer hr{
     border: 0.5px solid;
     width: 90%;
     margin: auto;
-    
-
   }
+  .web,
+  .bac
+  {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }.web> div,
+  .bac > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .web > div > img,
+  .bac > div > img{
+    margin: 70px auto;
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    background-attachment: cover;
+    background-color: silver;
+  }.web > div > h2,
+  .bac> div > h2{
+    position: relative;
+    top: -20px;
+    color: white;
+  }.web > div > p,
+  .bac > div > p{
+    position: relative;
+    top: 20px;
+    color: silver;
+    font-size: 25px;
+    line-height: 40px;
+  }.web > div > button,
+  .bac > div > button{ 
+    height: 50px;
+    width: 160px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    background-color: rgb(193, 169, 33);
+  }.web > div > button:hover,
+  .bac > div > button:hover{
+    background-color: rgb(192, 192, 192, 0.35);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .lower{
     display: flex;
     flex-direction: column;
@@ -249,9 +291,10 @@
   }
   .blogger{
     height: 300px;
-    width: 95%;
-    background-color: greenyellow;
+    width: 80%;
+    background-color: rgb(53, 51, 51);
     margin: 70px auto 0 auto;
+    border-radius: 50px;
   }
  
 

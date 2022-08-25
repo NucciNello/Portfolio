@@ -10,9 +10,9 @@
         $.extend(true, setting, options);
 
         var states = [
-            { $zIndex: 3, width: 300, height: 500, top: 230, left: 20, $opacity: 0.7 },
+            { $zIndex: 3, width: 300, height: 500, top: 230, left: 20, $opacity: 0.4 },
             { $zIndex: 4, width: 650, height: 930, top: 0, left: 260, $opacity: 1 },
-            { $zIndex: 3, width: 300, height: 500, top: 230, left: 860, $opacity: 0.7 },
+            { $zIndex: 3, width: 300, height: 500, top: 230, left: 860, $opacity: 0.4 },
         ];
 
         var $lis = $ele.find('li');

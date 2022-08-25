@@ -221,7 +221,13 @@ a:link{
   justify-content: center;
 
 }
+.content hr{
+  border: 0.5px solid;
+  width: 90%;
+  margin: auto;
+  
 
+}
 
  
 /* Media Queries */
