@@ -3,8 +3,8 @@
     var slide = function(ele,options) {
         var $ele = $(ele);
         var setting = {
-            speed: 2000,
-            interval: 4000,        
+            speed: 1000,
+            interval: 2000,        
         };
 
         $.extend(true, setting, options);
