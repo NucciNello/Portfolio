@@ -60,9 +60,9 @@ function myFunction(x){
                 });
                 return this;
             }
-        })(jQuery);
-        
-    } else{
+        })(jQuery); 
+    }
+    else{
         var slideIndex = 1;
         showDivs(slideIndex);
         
@@ -72,7 +72,7 @@ function myFunction(x){
         
         function showDivs(n) {
           var i;
-          var x = document.getElementsById("ab1");
+          var x = document.getElementsByClassName("ab1");
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
@@ -86,7 +86,7 @@ function myFunction(x){
 
         function carousel() {
           var i;
-          var x = document.getElementsById("ab1");
+          var x = document.getElementsByClassName("ab1");
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }

@@ -111,6 +111,7 @@
     width: 90%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -233,11 +234,10 @@
   .bac > div > button:hover{
     background-color: rgb(192, 192, 192, 0.35);
    }
-   .hi-next > button,
-   .hi-prev > button{
+   .butns{
     display: none;
    }
-
+   
 
 
 
@@ -586,7 +586,9 @@
       justify-content: center;
       align-items: center;
     }
-    .hi-slide .hi-prev,
+
+
+    /* .hi-slide .hi-prev,
     .hi-slide .hi-next{
       position: absolute;
       width: 50px;
@@ -618,7 +620,10 @@
     .hi-next > button,
    .hi-prev > button{
     display: contents;
-   }
+   } */
+
+
+
     .hi-slide > ul{
       list-style: none;
       position: relative;
@@ -703,6 +708,39 @@
     .bac > div > button:hover{
       background-color: rgb(192, 192, 192, 0.35);
      }
+     .fix{
+      margin-top: -30px;
+     }
+     .hi-next,
+     .hi-prev{
+      display: none;
+     }
+    .butns{
+      display: contents;
+      display: flex;
+    }
+    .butna,
+   .butnb{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 30px 10px 0 10px;
+    background-color: rgb(193, 169, 33);
+    cursor: pointer;
+   }.butna::before{
+    content: "<";
+   }.butnb::after{
+    content: ">";
+   }.butna:hover{
+    background-color: rgb(192, 192, 192, 0.35);
+   }
+   .butnb:hover{
+    background-color: rgb(192, 192, 192, 0.35);
+   }
+
+
+
+
   
   }
   
