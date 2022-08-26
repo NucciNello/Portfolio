@@ -685,7 +685,7 @@
     }.web > div > p,
     .bac > div > p{
       position: relative;
-      top: 20px;
+      top: 15px;
       color: silver;
       font-size: 17px;
       line-height: 40px;
