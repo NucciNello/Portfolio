@@ -72,7 +72,6 @@
   
   }
   @media (min-width: 505px){
-  /* Hamburger Menu */
   .hamburger{
     display: none;
   }
@@ -80,20 +79,11 @@
   }
   
   
-  
-  
-  
-  
-  
-  
-  
-  /* Codes for contents of Homepage Particularly*/
+  /* Codes for contents of The current Particularly*/
   .content{
       display: flex;
       height: 230rem;
       flex-direction: column;
-      
-
   }
   .developer{
     height: 140rem;
@@ -129,8 +119,6 @@
     color: rgb(53, 51, 51);
     transition: all 0.7s;
     font-size: 45px;
-    /* font-weight: bold; */
- 
   }
   .hi-slide .hi-prev{
     left: 265px;
@@ -156,7 +144,6 @@
     height: 100%;
     padding: 0;
     background-color: inherit;
-    /* opacity: 0.1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,8 +152,6 @@
     overflow: hidden;
     position: absolute;
     z-index: 0;
-    /* left: ;
-    top: ; */
     width: 70%;
     height: 90%;
     padding: 0;
@@ -237,31 +222,6 @@
    .butns{
     display: none;
    }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .lower{
     display: flex;
     flex-direction: column;
@@ -294,44 +254,7 @@
   }
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*Contacts CSS useful in every page*/
+  /*CCONTACT CSS FOR EVERY PAGE*/
   .contcont{
     display: flex;
     flex-direction: column;
@@ -407,7 +330,7 @@
   }
   
   
-  
+  /* MEDIA QUERIES FOR MOBILE */
   @media(max-width: 500px){
     .nuhu {
       width: 70%;
@@ -418,20 +341,14 @@
     }
     .bars {
       width: 0%;
-      /* display: none; */
-      /* background-color: pink; */
-      /* margin-top: 40px; */
     }
     .hamburger{
       width: 30%;
       background-color: inherit;
-      /* height: 40%; */
       display: flex;
       flex-direction: column;
-    
     }
     .line {
-      /* margin: auto; */
       display: block;
       float: left;
       height: 3px;
@@ -440,9 +357,7 @@
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       background-color: silver;
-    }
-  
-  
+    }  
     .content{
       display: flex;
       flex-direction: row;
@@ -497,8 +412,6 @@
       line-height: 70px;
       text-align: center;
       transition: 0.3s;
-      /* box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05); */
     }
     
     
@@ -510,9 +423,7 @@
        display: inline-block;
        margin: 0;
        border: 0;
-       /* border-bottom: 2px solid black; */
        width: 100%;
-    
     }.bars ul li a{
       color: black;
       font-size: 20px;
@@ -571,12 +482,6 @@
      .imgc > div{
       margin: 0 30px 0 30px;
     }
-  
-
-
-
-
-
     .hi-slide{
       background-color: inherit;
       height: 58.5rem;
@@ -586,44 +491,6 @@
       justify-content: center;
       align-items: center;
     }
-
-
-    /* .hi-slide .hi-prev,
-    .hi-slide .hi-next{
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      margin: 655px 0 0 100px;
-      border-radius: 50px;
-      text-align: center;
-      cursor: pointer;
-      background-color: rgb(193, 169, 33);
-      color: rgb(53, 51, 51);
-    }
-    .hi-slide .hi-prev{
-      left: 30px;
-  
-    }
-    .hi-slide .hi-next{
-      left: 100px;
-    }
-    .hi-slide .hi-next:hover,
-    .hi-slide .hi-prev:hover{
-      opacity: 1;
-      background-color: rgb(192, 192, 192, 0.35);
-    }
-    .hi-slide .hi-prev::before {
-      content: "<";
-    }.hi-slide .hi-next::after {
-      content: ">";
-    }
-    .hi-next > button,
-   .hi-prev > button{
-    display: contents;
-   } */
-
-
-
     .hi-slide > ul{
       list-style: none;
       position: relative;
@@ -639,8 +506,6 @@
       overflow: hidden;
       position: absolute;
       z-index: 0;
-      /* left: ;
-      top: ; */
       width: 90%;
       height: 90%;
       padding: 0;
@@ -731,16 +596,9 @@
     content: "<";
    }.butnb::after{
     content: ">";
-   }.butna:hover{
+   }
+   .butns > button:active{
     background-color: rgb(192, 192, 192, 0.35);
    }
-   .butnb:hover{
-    background-color: rgb(192, 192, 192, 0.35);
-   }
-
-
-
-
-  
   }
   

@@ -52,9 +52,6 @@
                                products across multiple APIs,<br>
                                  third-party integrations<br>
                                         and Databases.</p>
-                    <!-- </div>
-                    <div><button class="button" id="button" value="my projects">my projects</button>
-                    </div>   -->
                     </div></li>
                     <li><div class="web ab1">
                         <div>
@@ -86,7 +83,8 @@
                         </div>
                     </div></li>
                 </ul>
-                <div class="butns"><button class="butna" onclick="plusDivs(-1)"></button>
+                <div class="butns">
+                    <button class="butna" onclick="plusDivs(-1)"></button>
                     <button class="butnb" onclick="plusDivs(+1)"></button>
                 </div>
             </div>
@@ -166,18 +164,16 @@
             <div class="left">
                 
                 <div class="email">
-                         <!-- <img src="mail.png" width="30px" height="30px"> -->
                          <h3 style="color: rgb(193, 169, 33);">email:</h3>
                          <ul style="color: silver;">
                          <li><a href="mailto:caljr@gmail.com">caljr9301@gmail.com</a></li>
                          </ul>
                 </div>
                 <div class="mobile">
-                          <!-- <img src="phone.png" width="30px" height="30px"> -->
                           <h3 style="color: rgb(193, 169, 33);">mobile:</h3>
                           <ul style="color: silver;">
-                          <li>+255 759 027 617</li>
-                          <li>+255 767 003 361</li>
+                          <li><a href="+255 759 027 617">+255 759 027 617</a></li>
+                          <li><a href="+255 767 003 361">+255 767 003 361</a></li>
                           </ul>
                 </div>
             </div>
@@ -203,39 +199,5 @@
         </div>
     </div>
     <script type="text/javascript" src="./Functionlity/hamburger.js"></script>
-    <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-            showDivs(slideIndex += n);
-            }
-            
-            function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("ab1");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            x[slideIndex-1].style.display = "block";  
-            }
-            
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("ab1");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 6000); // Change image every 8 seconds
-            }
-    </script>
 </body>
 </html>
