@@ -564,10 +564,19 @@
     .bac > div > p{
       position: relative;
       color: silver;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 27px;
-    }.web > div > button,
-    .bac > div > button{ 
+    }.web > div > button{ 
+      height: 50px;
+      width: 160px;
+      color: black;
+      font-size: 18px;
+      cursor: pointer;
+      position: relative;
+      top: 80px;
+      background-color: rgb(193, 169, 33);
+    }
+    .mobu > div > button{ 
       height: 50px;
       width: 160px;
       color: black;
