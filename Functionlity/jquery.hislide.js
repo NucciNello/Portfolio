@@ -62,7 +62,7 @@ function myFunction(x){
             }
         })(jQuery); 
     }
-    else{
+    else if(y.matches){
         var slideIndex = 1;
         showDivs(slideIndex);
         
@@ -83,7 +83,7 @@ function myFunction(x){
         
         var myIndex = 0;
         carousel();
-
+    
         function carousel() {
           var i;
           var x = document.getElementsByClassName("ab1");
@@ -93,11 +93,13 @@ function myFunction(x){
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}    
           x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 6000); // Change image every 8 seconds
+          setTimeout(carousel, 3000); // Change image every 3 seconds
           }
     }
 }
 
 var x = window.matchMedia("(min-width: 500px)")
+var y = window.matchMedia("(max-width: 500px)")
 myFunction(x)
 x.addListener(myFunction)
+y.addListener(showDivs)

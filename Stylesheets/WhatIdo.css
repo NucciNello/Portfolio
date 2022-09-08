@@ -57,7 +57,6 @@
   
   }.bars ul li{
      display: inline-block;
-     /* line-height: 50px; */
      margin: 0 5px;
   
   }.bars ul li a{
@@ -82,7 +81,7 @@
   /* Codes for contents of The current Particularly*/
   .content{
       display: flex;
-      height: 230rem;
+      height: auto;
       flex-direction: column;
   }
   .developer{
@@ -249,7 +248,7 @@
     height: 300px;
     width: 80%;
     background-color: rgb(53, 51, 51);
-    margin: 70px auto 0 auto;
+    margin: 20px auto 20px auto;
     border-radius: 50px;
   }
  
@@ -460,9 +459,9 @@
     .developer{
       width: 97.5%;
       padding: 0;
-      margin: 30px 5px 30px 5px;
+      margin: 30px 5px auto 5px;
       font-size: 18px;
-      height: 109rem;
+      height: 89rem;
     }
     .br{
       display: none;
@@ -484,7 +483,7 @@
     }
     .hi-slide{
       background-color: inherit;
-      height: 58.5rem;
+      height: 40.3rem;
       width: 100%;
       margin: auto;
       display: flex;
@@ -501,19 +500,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 27px;
     }
     .hi-slide > ul >li{
       overflow: hidden;
       position: absolute;
       z-index: 0;
       width: 90%;
-      height: 90%;
+      height: 40.95rem;
       padding: 0;
+      top: -1px;
       border: 3px solid rgb(193, 169, 33);
       cursor: pointer;
     }.hi-slide > ul > li > div{
       width: 100%;
-      height: 100%;
+      height:  40.95rem;
     }
     .hi-slide > ul > li > div > img{
       width: 100%;
@@ -539,26 +540,32 @@
       height: auto;
       width: 100%;
     }
-    .web > div > img,
-    .bac > div > img{
-      margin: 60px auto;
-      height: 300px;
-      width: 300px;
+    .ab1 > div > img{
+      margin: 40px auto;
+      height: 250px;
+      width: 250px;
       border-radius: 50%;
       background-attachment: cover;
       background-color: silver;
-    }.web > div > h2,
-    .bac> div > h2{
+    }
+    .bac > div > img{
+      margin: 60px auto;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-attachment: cover;
+      background-color: silver;
+    }.web > div > h1,
+    .bac> div > h1{
       position: relative;
-      top: -20px;
+      font-size: 20px;
       color: white;
     }.web > div > p,
     .bac > div > p{
       position: relative;
-      top: 15px;
       color: silver;
-      font-size: 14px;
-      line-height: 35px;
+      font-size: 18px;
+      line-height: 27px;
     }.web > div > button,
     .bac > div > button{ 
       height: 50px;
@@ -580,25 +587,14 @@
      .hi-prev{
       display: none;
      }
-    .butns{
-      display: contents;
-      display: flex;
+
+     .blogger{
+      height: 300px;
+      width: 97.5%;
+      background-color: rgb(53, 51, 51);
+      margin: 20px auto 20px auto;
+      border-radius: 50px;
     }
-    .butna,
-   .butnb{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin: 30px 10px 0 10px;
-    background-color: rgb(193, 169, 33);
-    cursor: pointer;
-   }.butna::before{
-    content: "<";
-   }.butnb::after{
-    content: ">";
-   }
-   .butns > button:active{
-    background-color: rgb(192, 192, 192, 0.35);
-   }
+   
   }
   
